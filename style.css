@@ -1,0 +1,278 @@
+html{
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+.row{
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Fight With CORONA */
+.fight_with_corona{
+height: 450px;
+width: 100%;
+}
+.rightside h1{
+  font-size: 2rem;
+}
+.rightside img{
+  clip-path: circle(50% at 50% 50%);
+
+}
+.corona_rot img{
+animation: gocorona 3s linear infinite;
+}
+@keyframes gocorona{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* .leftside img{
+animation: heartbeat 3s linear infinite;  
+}
+@keyframes heartbeat{
+  0%{
+    transform: rotate(0);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+/* CORONA Update */
+.corona_update{
+  margin: 0 0 30px 0;
+}
+.corona_update h3{
+  color: #bb76ff;
+}
+.corona_update h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/*ABOUT CORONA*/
+.sub_section{
+  background-color: #fafafa;
+}
+
+
+/*CORONA SYMPTOMS*/
+/*.sub_heading{
+  color: red;
+  font-size: 10px;
+}*/
+
+/* TESTIMONIALS*/
+.card{
+  background-color: #000000;
+}
+.card h2{
+color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 60px;
+}
+.card h2::after {
+  content: "";
+  width: 140px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #db584e;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+    opacity: .8;
+}
+
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+.carousel-item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.carousel .testimonial {
+  padding: 30px 0 10px;
+}
+.carousel .overview { 
+  font-style: italic;
+}
+.carousel .overview b {
+  text-transform: uppercase;
+  color: #db584e;
+}
+.carousel .carousel-control {
+  width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+  background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+  line-height: 42px;
+    position: absolute;
+    display: inline-block;
+  color: rgba(255, 255, 255, 1);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 1px 3px;
+  border-radius: 50%;
+}
+.carousel-indicators li { 
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {  
+  background: #555;   
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+/*FOOTER*/
+.footer_style{
+  background-color: black;
+}
+.footer_style p{
+  margin-bottom: 0!important;
+}
+
+/* ABOUT PAGE */
+.about-p{
+  font-size: 18px;
+  color: crimson;
+}
+
+/* CONTACT PAGE */
+.form-btn{
+  color: #db584e;
+}
+
+/*RESPONSIVE PART*/
+@media(width:768px){
+  .about_heading_res{
+    margin-top: 0px!important;
+  }
+  .treat_heading_res{
+    margin-top: 0px!important;
+  }
+}
+
+@media(max-width: 768px){
+  .fight_with_corona{
+    height: 700px;
+    text-align: center;
+  }
+  .fight_with_corona h1{
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    font-size: 34px;
+  }
+   .count_style{
+    display: inline!important;
+  }
+  .count_style p{
+    text-align: center;
+  }
+  
+  .about_res{
+    /* border: 10px solid tomato; */
+    margin-left: 0!important;
+  }
+  .corona_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .treat_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .treat_res{
+    margin-left: 0!important;
+  }
+  .treat_heading_res{
+    margin-top: 50px;
+  }
+  .about_heading_res{
+    margin-top: 50px;
+  }
+
+}
